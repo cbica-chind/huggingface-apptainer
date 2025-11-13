@@ -1,0 +1,10 @@
+# Filename: hf.def
+
+Bootstrap: localimage
+From: tensorflow_25.02-tf2-py3.sif
+
+%post
+
+python3 -m pip install -U pip setuptools wheel
+python3 -m pip install numpy
+python3 -m pip install -U transformers hf_xet pillow torch
