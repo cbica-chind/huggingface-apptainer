@@ -54,3 +54,16 @@ https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
 
 4.57.1
 ```
+
+### Check GPU availability
+
+Run the test script `test.py`:
+
+``` python
+#!/usr/bin/env python3
+# filename: test.py
+import tensorflow as tf
+
+print(f'{tf.config.list_physical_devices("GPU")}')
+```
+
