@@ -87,3 +87,12 @@ import tensorflow as tf
 print(f'{tf.config.list_physical_devices("GPU")}')
 ```
 
+``` console
+$ apptainer run --nv ./hf.sif python test.py
+...
+[ warnings about factories ignored ]
+...
+
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+```
+
